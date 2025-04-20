@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Tailwind CSS CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Responsive navbar -->
+    <nav class="bg-green-100 p-3 flex justify-between shadow-xl sticky top-0" style="height: 50px;">
+        <h1 class="text-2xl">Greenden</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+            class="size-6 md:hidden">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="prod.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black " href="#">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class=" m-3 md:justify-center md:mr-60 md:ml-60">
+        <h1 class="m-3 font-bold text-3xl font-serif text-center">Contact Us</h1>
+        <p class="text-gray-500 text-xl text-center font-light">Got a technical issue? Want to send feedback about a
+            beta feature? Need details about our Business plan? Let us know.</p>
+        <form>
+            <div class="m-3 mt-12">
+                <label for="email" class="font-medium text-sm">Your Email</label><br>
+                <input type="Email" placeholder="name@flowbite.com"
+                    class="w-full text-gray-100 p-2 text-sm bg-gray-100 mt-2 border border-gray-300 rounded-lg ">
+                <p class="text-sm  font-light border border-black w-36 p-1 hover:bg-gray-100 focus:"
+                    style="display: none;">Please fill out this field</p>
+                <p class="text-sm border border-black hidden  " style="width: fit-content; ">Please fill out this field</p>
+            </div>
+
+            <div class="m-3 mt-12">
+                <label class="font-medium text-sm">Subject</label>
+                <input type="text" placeholder="Let us know how can we help you"
+                    class="w-full text-gray-100 p-2 text-sm bg-gray-100 mt-2  border border-gray-300 rounded-lg">
+            </div>
+
+            <div class="m-3 mt-12">
+                <label class="font-medium text-sm">Your message</lable>
+                    <textarea placeholder="Leave a comment"
+                        class="w-full text-gray-100 p-2 text-sm bg-gray-100 mt-2  border border-gray-300 rounded-lg"></textarea>
+            </div>
+        </form>
+
+    </section>
+
+    <!-- footer -->
+    <section class="bg-green-200 mb-4 p-10 mt-11">
+        <h1 class="p-3 font-bold text-3xl ">Greenden</h1>
+        <p class="p-2">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <p class="p-2 text-xm">&copy; 2025 Greenday.com</p>
+    </section>
+
+</body>
+
+</html>
