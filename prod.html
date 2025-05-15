@@ -13,10 +13,32 @@
     <!--Responsive na<vbar -->
     <nav class="bg-green-100 p-3 flex justify-between shadow-xl sticky top-0 z-10" style="height: 50px;">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
-            class="size-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+            stroke="currentColor" class="size-6 md:hidden">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
+
+        <!-- side navbar -->
+        <section class="bg-green-100 w-64 h-full fixed z-20   transition-all duration-1000 " style="right: -50%;"
+            id="sidenav">
+
+            <div class="text-right  p-5">
+                <p id="close" class="inline cursor-pointer">X</p>
+            </div>
+            <ul class="flex flex-col gap-10 items-center  text-gray-600  ">
+                <li>
+                    <a href="index.html" class=" hover:text-black hover:underline p-10 ">Home</a>
+                </li>
+
+                <li>
+                    <a href="prod.html " class=" hover:text-black hover:underline p-10 ">Products</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class=" hover:text-black hover:underline p-10">Contact</a>
+                </li>
+            </ul>
+        </section>
 
 
         <ul class=" gap-5 text-gray-600 hidden md:flex">
@@ -35,67 +57,68 @@
     <!-- search bar -->
     <section>
         <h1 class="text-3xl font-bold text-center mt-5">Our Products</h1>
-        <input type="text" placeholder="Search for a Product.."
-            class="text-sm p-2 border border-black ml-12 mr-12 md:ml-32 mt-5" style="width: 80%; ">
 
     </section>
     <!-- products -->
+    <section>
+        <input id="search" type="text" placeholder="Search for a Product.."
+            class="text-sm p-2 border border-black ml-12 mr-12 md:ml-32 mt-5" style="width: 80%; ">
+        <div id="container"
+            class=" grid grid-cols-2 gap-10 ml-4 mr-4 mt-5 mb-10 z-0 md:grid md:grid-cols-4 md:ml-10  md:z-0">
+            <div>
+                <img src="./images/img1.jpg" alt="img1"
+                    class="h-60 w-56 m-5 md:h-72 md:w-48 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
+                <h1 class="text-center">Hillmart</h1>
+                <p class="text-center">$795</p>
+            </div>
+            <div>
+                <img src="./images/img2.jpg" alt="img2"
+                    class="h-60 w-56 m-5 md:h-72 md:w-48 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
+                <h1 class="text-center">Souvenir</h1>
+                <p class="text-center">$854</p>
+            </div>
+            <div>
+                <img src="./images/img3.jpg" alt="img3"
+                    class="h-60 w-56 m-5 md:h-72 md:w-48 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
+                <h1 class="text-center">Deconerst</h1>
+                <p class="text-center">$895</p>
+            </div>
 
-    <section class=" grid grid-cols-2 gap-10 ml-4 mr-4 mt-5 mb-10 z-0 md:grid md:grid-cols-4 md:ml-10  md:z-0">
-        <div>
-            <img src="img1.jpg" alt="img1"
-                class="h-60 w-56 m-5 md:h-72 md:w-48 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
-            <h1 class="text-center">Hillmart</h1>
-            <p class="text-center">$795</p>
-        </div>
-        <div>
-            <img src="img2.jpg" alt="img2"
-                class="h-60 w-56 m-5 md:h-72 md:w-48 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
-            <h1 class="text-center">Souvenir</h1>
-            <p class="text-center">$854</p>
-        </div>
-        <div>
-            <img src="img3.jpg" alt="img3"
-                class="h-60 w-56 m-5 md:h-72 md:w-48 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
-            <h1 class="text-center">Deconerst</h1>
-            <p class="text-center">$895</p>
-        </div>
+            <div>
+                <img src="./images/img4.jpg" alt="img4"
+                    class="h-60 w-56 m-5 md:h-72 md:w-48 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
+                <h1 class="text-center">Niyara Ceremic</h1>
+                <p class="text-center">$999</p>
+            </div>
 
-        <div>
-            <img src="img4.jpg" alt="img4"
-                class="h-60 w-56 m-5 md:h-72 md:w-48 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
-            <h1 class="text-center">Niyara Ceremic</h1>
-            <p class="text-center">$999</p>
-        </div>
+            <div>
+                <img src="./images/img5.jpg" alt="img5"
+                    class="h-60 w-56 m-5 md:h-72 md:w-52 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
+                <h1 class="text-center">Yuccabea Italia</h1>
+                <p class="text-center">$599</p>
+            </div>
 
-        <div>
-            <img src="img5.jpg" alt="img5"
-                class="h-60 w-56 m-5 md:h-72 md:w-52 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
-            <h1 class="text-center">Yuccabea Italia</h1>
-            <p class="text-center">$599</p>
-        </div>
+            <div>
+                <img src="./images/img6.jpg" alt="img6"
+                    class="h-60 w-56 m-5 md:h-72 md:w-52 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
+                <h1 class="text-center">Jade</h1>
+                <p class="text-center">$789</p>
+            </div>
 
-        <div>
-            <img src="img6.jpg" alt="img6"
-                class="h-60 w-56 m-5 md:h-72 md:w-52 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
-            <h1 class="text-center">Jade</h1>
-            <p class="text-center">$789</p>
-        </div>
+            <div>
+                <img src="./images/img7.jpg" alt="img7"
+                    class="h-60 w-56 m-5 md:h-72 md:w-52 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
+                <h1 class="text-center">Matavia</h1>
+                <p class="text-center">$499</p>
+            </div>
 
-        <div>
-            <img src="img7.jpg" alt="img7"
-                class="h-60 w-56 m-5 md:h-72 md:w-52 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
-            <h1 class="text-center">Matavia</h1>
-            <p class="text-center">$499</p>
+            <div>
+                <img src="./images/img8.jpg" alt="img8"
+                    class="h-60 w-56 m-5 md:h-72 md:w-52 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
+                <h1 class="text-center">Amerlad</h1>
+                <p class="text-center">$899</p>
+            </div>
         </div>
-
-        <div>
-            <img src="img8.jpg" alt="img8"
-                class="h-60 w-56 m-5 md:h-72 md:w-52 md:m-5 hover:shadow-2xl transform hover:-translate-y-2">
-            <h1 class="text-center">Amerlad</h1>
-            <p class="text-center">$899</p>
-        </div>
-
     </section>
 
     <!-- footer -->
@@ -104,3 +127,33 @@
         <p class="p-2">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
         <p class="p-2 text-xm">&copy; 2025 Greenday.com</p>
     </section>
+
+    <script src="./prod.js">
+        //product search container
+
+        var search = document.getElementById("search")
+        var container = document.getElementById("container")
+        var h1list = container.querySelectorAll("text-center")
+
+        search.addEventListener("keyup",function(){
+            var enteredValue = event.target.value
+
+            for (count = 0;count<h1list.length;count = count+1){
+                if(h1list[count].textContent.toUpperCase().indexOf(enteredValue)>0)
+            {
+                h1list[count].style.display="block"
+            }
+            else{
+                h1list[count].style.display="none"
+            }
+
+            }
+        })
+
+
+
+    </script>
+
+
+
+</body>
