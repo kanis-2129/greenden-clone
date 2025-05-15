@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,10 +14,31 @@
     <!--Responsive navbar -->
     <nav class="bg-green-100 p-3 flex justify-between shadow-xl sticky top-0" style="height: 50px;">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
             class="size-6 md:hidden">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
+
+        <!-- side navbar -->
+        <section class="bg-green-100 w-64 h-full fixed z-20   transition-all duration-1000 " style="right: -70%;" id="sidenav">
+
+            <div class="text-right  p-5">
+                <p id="close" class="inline cursor-pointer"  >X</p>
+            </div>
+            <ul class="flex flex-col gap-10 items-center  text-gray-600  ">
+                <li>
+                    <a href="index.html" class=" hover:text-black hover:underline p-10 ">Home</a>
+                </li>
+
+                <li>
+                    <a href="prod.html " class=" hover:text-black hover:underline p-10 ">Products</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class=" hover:text-black hover:underline p-10">Contact</a>
+                </li>
+            </ul>
+        </section>
 
 
         <ul class="flex gap-5 text-gray-600 hidden md:flex">
@@ -27,7 +49,7 @@
                 <a class="hover:underline hover:text-black" href="prod.html">Products</a>
             </li>
             <li>
-                <a class="hover:underline hover:text-black " href="#">contact</a>
+                <a class="hover:underline hover:text-black " href="contact.html">contact</a>
             </li>
         </ul>
     </nav>
@@ -67,6 +89,8 @@
         <p class="p-2">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
         <p class="p-2 text-xm">&copy; 2025 Greenday.com</p>
     </section>
+
+    <script src="./contact.js"></script>
 
 </body>
 
